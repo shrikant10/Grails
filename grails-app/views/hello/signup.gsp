@@ -10,3 +10,8 @@
         <input type="password" name="password"><br><br>
         <input type="submit" value="submit">
     </form>
+
+    <!--Firstname :${firstname}<br>
+    Lastname :${lastname}<br>
+    Email :${email}<br>
+    Password:${password}<br>    -->

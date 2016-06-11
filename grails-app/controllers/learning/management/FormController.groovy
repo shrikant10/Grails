@@ -13,3 +13,6 @@ class FormController {
                 "You Submitted following details:<br>"
                 + "$params.firstname $params.lastname $params.email")
 
+        return [firstname: params.firstname,lastname:params.lastname,email:params.email,password:params.password,currentDate: new Date(),rating:23,age:100]
+    }
+}

@@ -6,11 +6,14 @@ class HelloController {
          render("Hello this is shrikant ")
     }
 
-    def salman() {
-         render("This is salman khan")
+    def register() {
+         render(view:"signup")
     }
 
     def signup() {
+
+        /*Map m1 = [firstname:"Shrikant",lastname:"Gupta",email:"gupta.shri16@gmail.com",password:"qwerty"]
+        return m1*/
     }
 }
 
