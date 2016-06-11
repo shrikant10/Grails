@@ -9,9 +9,7 @@ class FormController {
         println params.email
         println params.password
 
-        render("Thank you for sign-up." +
-                "You Submitted following details"
-         + "$params.firstname $params.lastname $params.email")
-    }
+        render("Thank you for sign-up.<br>" +
+                "You Submitted following details:<br>"
+                + "$params.firstname $params.lastname $params.email")
 
-}
