@@ -6,8 +6,8 @@
         <input type="text" name="lastname"><br><br>
         <label>Email :</label>
         <input type="email" name="email"><br><br>
-        <label>Password :</label>
-        <input type="password" name="password"><br><br>
+        <label>Age :</label>
+        <input type="number" name="age"><br><br>
         <input type="submit" value="submit">
     </form>
 

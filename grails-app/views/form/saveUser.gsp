@@ -14,12 +14,12 @@
 <body>
     Thank you:
 
-    Firstname :${firstname}<br>
-    Lastname :${lastname}<br>
-    Email :${email}<br>
-    Password:${password}<br>
-    Age:${age}<br>
+    Firstname :${recentlySavedUser.myfirstname}<br>
+    Lastname :${recentlySavedUser.mylastname}<br>
+    Email :${recentlySavedUser.myemail}<br>
+    Password:${recentlySavedUser.myage}<br>
+    <!--Age:${age}<br>
     CurrentDate:${currentDate}<br>
-    Rate:${rating}<br>
+    Rate:${rating}<br>-->
 </body>
 </html>
