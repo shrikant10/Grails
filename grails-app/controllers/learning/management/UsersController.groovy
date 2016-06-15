@@ -15,7 +15,7 @@ class UsersController {
         println params.email
         println params.age
 
-        User u1 =new User([myfirstname: params.firstname,mylastname:params.lastname,myemail:params.email,myage:params.age])
+        User u1 = new User([myfirstname: params.firstname, mylastname: params.lastname, myemail: params.email, myage: params.age])
 
         session.recentlySavedUser = u1
         if (!session.allUsers) {
@@ -24,7 +24,8 @@ class UsersController {
         session.allUsers.add(u1)
         redirect(action: "show")
     }
+
     def list() {
         return [allUsers: session.allUsers]
     }
-fdf}
+}
