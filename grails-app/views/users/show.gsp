@@ -4,7 +4,6 @@
   Date: 13/6/16
   Time: 12:44 PM
 --%>
-
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
@@ -16,13 +15,13 @@
     <div class="page-header"> <h1>Recently saved user</h1> </div>
     <dl>
         <dt>Firstname :</dt>
-            <dd>${recentlySavedUser.myfirstname}</dd>
+            <dd>${recentlySavedUser.firstName}</dd>
         <dt>Lastname :</dt>
-            <dd>${recentlySavedUser.mylastname}</dd>
+            <dd>${recentlySavedUser.lastName}</dd>
         <dt>Email :</dt>
-            <dd>${recentlySavedUser.myemail}</dd>
+            <dd>${recentlySavedUser.email}</dd>
         <dt>Age:</dt>
-            <dd>${recentlySavedUser.myage}</dd>
+            <dd>${recentlySavedUser.age}</dd>
     </dl>
 
 <button class="btn btn-info"><a href="">LIST</a></button>

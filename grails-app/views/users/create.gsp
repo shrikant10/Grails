@@ -7,7 +7,7 @@
 <body>
 <div class="container">
     <div class="page-header"><h1> SIGN-UP FORM</h1></div>
-    <form class="form-horizontal" action="/learning-management/users/save">
+    <form class="form-horizontal" action="/users/save">
         <div class="form-group">
             <label class="control-label col-md-2" for="firstname">Firstname </label>
             <div class="col-md-8"><input class="form-control" type="text" name="firstname" id="firstname" placeholder="Enter First name"></div>

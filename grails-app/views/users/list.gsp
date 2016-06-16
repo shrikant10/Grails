@@ -13,7 +13,7 @@
 <body>
 <div class="container">
     <div class="page-header"><h1>List of all saved user</h1></div>
-<table class="table table-bordered">
+    <table class="table table-bordered">
             <thead>
                 <tr class="bg-success">
                     <th>Firstname</th>
@@ -24,11 +24,11 @@
             </thead>
             <tbody>
             <g:each in="${allUsers}">
-                    <tr class="${it.myage.toInteger()>=100?"danger":""}">
-                        <td>${it.myfirstname}</td>
-                        <td>${it.mylastname}</td>
-                        <td>${it.myemail}</td>
-                        <td>${it.myage}</td>
+                    <tr class="${it.age.toInteger()>=100?"danger":""}">
+                        <td>${it.firstName}</td>
+                        <td>${it.lastName}</td>
+                        <td>${it.email}</td>
+                        <td>${it.age}</td>
                     </tr>
             </g:each>
             </tbody>

@@ -15,13 +15,14 @@ class UsersController {
         println params.email
         println params.age
 
-        User u1 = new User([myfirstname: params.firstname, mylastname: params.lastname, myemail: params.email, myage: params.age])
+        Person myuser = new Person([firstName: params.firstname,lastName: params.lastname, email: params.email, age: params.age.toInteger()])
+        myuser.save()
 
-        session.recentlySavedUser = u1
+        session.recentlySavedUser = myuser
         if (!session.allUsers) {
             session.allUsers = []
         }
-        session.allUsers.add(u1)
+        session.allUsers.add(myuser)
         redirect(action: "show")
     }
 

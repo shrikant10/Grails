@@ -4,7 +4,6 @@
   Date: 16/6/16
   Time: 11:50 AM
 --%>
-
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
@@ -12,9 +11,8 @@
     <asset:javascript src="bootstrap.js"/>
     <asset:javascript src="jquery.min.js"/>
     <g:layoutHead/>
-    <title></title>
+    <title>Form layout</title>
 </head>
-
 <body>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
