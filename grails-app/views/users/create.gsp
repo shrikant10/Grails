@@ -2,14 +2,9 @@
 <html>
 <head>
     <title>Sign-up</title>
-    <asset:stylesheet href="bootstrap.css"/>
-    <asset:javascript src="bootstrap.js"/>
-    <asset:javascript src="jquery.min.js"/>
+    <meta name="layout" content="abc" />
 </head>
 <body>
-
-<g:render template="/templates/mynavbar" model="[myCurrentPage:'create']"></g:render>
-
 <div class="container">
     <div class="page-header"><h1> SIGN-UP FORM</h1></div>
     <form class="form-horizontal" action="/learning-management/users/save">

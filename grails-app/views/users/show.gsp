@@ -9,12 +9,9 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Show</title>
-    <asset:stylesheet href="bootstrap.css"/>
-    <asset:javascript src="bootstrap.js"/>
-    <asset:javascript src="jquery.min.js"/>
+    <meta name="layout" content="abc" />
 </head>
 <body>
-<g:render template="/templates/mynavbar" model="[myCurrentPage:'show']"></g:render>
 <div class="container">
     <div class="page-header"> <h1>Recently saved user</h1> </div>
     <dl>
