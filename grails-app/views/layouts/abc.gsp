@@ -12,6 +12,18 @@
     <asset:javascript src="jquery.min.js"/>
     <g:layoutHead/>
     <title>Form layout</title>
+    <style>
+    .footer {
+        height: 180px;
+        background-color: #000000;
+        position: relative;
+        padding-top: 60px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 100px;
+        text-align: center;
+    }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -26,19 +38,29 @@
         </div>
         <div class="container collapse navbar-collapse" id="bs">
             <ul class="nav navbar-nav navbar-right">
-                <li class="ls ${(myCurrentPage =='create')? 'active':''}">
+                <li class="ls ${params.action=='create'?'active':''}">
                     <g:link controller="users" action="create"><b>CREATE</b></g:link>
                 </li>
-                <li class="ls ${(myCurrentPage =='show')? 'active':''}">
+                <li class="ls ${params.action=='show'?'active':''}">
                     <g:link controller="users" action="show"><b>SHOW</b></g:link>
                 </li>
-                <li class="ls ${(myCurrentPage =='list')? 'active':''}">
+                <li class="ls ${params.action=='list'?'active':''}">
                     <g:link controller="users" action="list"><b>LIST</b></g:link>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<g:layoutBody/>
+<div class="container">
+    <div class="col-md-9">
+        <g:pageProperty name="page.main" />
+    </div>
+    <div class="col-md-3" style="text-align: justify">
+        <g:pageProperty name="page.side" />
+    </div>
+</div>
+<div class="container-fluid footer common">
+    <div class="page-header"><h1> ORIGIN OF LIFE </h1></div>
+</div>
 </body>
 </html>

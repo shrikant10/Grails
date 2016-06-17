@@ -12,8 +12,9 @@
 </head>
 <body>
 <div class="container">
-    <div class="page-header"><h1>List of all saved user</h1></div>
-    <table class="table table-bordered">
+    <content tag="main">
+        <div class="page-header"><h1>List of all saved user</h1></div>
+        <table class="table table-bordered">
             <thead>
                 <tr class="bg-success">
                     <th>Firstname</th>
@@ -33,6 +34,14 @@
             </g:each>
             </tbody>
     </table>
+    </content>
+    <content tag="side">
+        <p>The origin of life is a scientific problem which is not yet solved. There are plenty of ideas, but few clear facts.
+            <br><br>It is generally agreed that all life today evolved by common descent from a single primitive lifeform.
+            <br><br>Just like in Java, groovy can access its instance members using the this keyword. <br><br>The following
+        example shows how when we use the statement this.x, it refers to its instance and sets the
+        value of x accordingly.</p>
+    </content>
 </div>
 </body>
 </html>
