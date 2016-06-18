@@ -9,7 +9,7 @@
 
     <content tag="main">
         <div class="page-header"><h1> SIGN-UP FORM</h1></div>
-        <form class="form-horizontal" action="/users/save">
+        <g:form method="post" class="form-horizontal" controller="users" action="save">
                 <div class="form-group">
                 <label class="control-label col-md-2" for="firstname">Firstname </label>
                 <div class="col-md-8"><input class="form-control" type="text" name="firstname" id="firstname" placeholder="Enter First name"></div>
@@ -29,7 +29,7 @@
             <div class="form-group">
                 <button class="btn btn-primary col-md-offset-2" type="submit">SUBMIT</button>
             </div>
-    </form>
+    </g:form>
     </content>
 
     <content tag="side">

@@ -15,6 +15,10 @@
     <content tag="main">
         <div class="page-header"> <h1>Recently saved user</h1> </div>
     <dl class="dl-horizontal">
+        <dt>ID :</dt>
+            <dd>${recentlySavedUser.id}</dd>
+        <dt>Version :</dt>
+            <dd>${recentlySavedUser.version}</dd>
         <dt>Firstname :</dt>
             <dd>${recentlySavedUser.firstName}</dd>
         <dt>Lastname :</dt>
