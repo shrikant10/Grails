@@ -28,13 +28,23 @@
             <tbody>
             <g:each in="${allUsers}">
                     <tr class="${it.age.toInteger()>=100?"danger":""}">
-                        <td><g:link controller="users" action="show" id="${it.id}">${it.id}</g:link></td>
+                        <td><g:link controller="users" action="show"
+                                                      id="${it.id}">${it.id}</g:link></td>
                         <td>${it.firstName}</td>
                         <td>${it.lastName}</td>
                         <td>${it.email}</td>
                         <td>${it.age}</td>
-                        <td><g:link controller="users" action="edit" id="${it.id}">Edit</g:link>  <g:link
-                                controller="users" action="delete" id="${it.id}">Delete</g:link></td>
+                        <td><button class="btn btn-info">
+                            <g:link controller="users" action="edit" id="${it.id}">Edit</g:link>
+                        </button>
+                            <g:link onclick="return myFunction()"
+                                controller="users" action="delete" id="${it.id}">
+                                Delete </g:link></td>
+                            <script>
+                                function myFunction() {
+                                    return confirm("It will delete the record ");
+                                }
+                            </script>
                     </tr>
             </g:each>
             </tbody>

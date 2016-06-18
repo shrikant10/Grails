@@ -47,7 +47,6 @@ class UsersController {
         myPerson.save(flush: true)
         redirect(action:"list" )
     }
-
     def delete() {
         println "Deleting the record with id: ${params.id}"
         Person personInstance = Person.get(params.id)
