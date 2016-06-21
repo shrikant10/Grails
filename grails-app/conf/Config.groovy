@@ -115,3 +115,5 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+abc.xyz.myKey = "12345"

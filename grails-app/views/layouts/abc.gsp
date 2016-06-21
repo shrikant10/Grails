@@ -8,6 +8,7 @@
 <html>
 <head>
     <asset:stylesheet href="bootstrap.css"/>
+    <asset:stylesheet href="font-awesome.min.css"/>
     <asset:javascript src="bootstrap.js"/>
     <asset:javascript src="jquery.min.js"/>
     <g:layoutHead/>
@@ -44,6 +45,9 @@
                 <li class="ls ${params.action=='list'?'active':''}">
                     <g:link controller="users" action="list"><b>LIST</b></g:link>
                 </li>
+                <li class="ls ${params.action=='seach'?'active':''}">
+                    <g:link controller="users" action="search"><b>SEARCH</b></g:link>
+                </li>
             </ul>
         </div>
     </div>
@@ -55,9 +59,6 @@
     <div class="col-md-3" style="text-align: justify">
         <g:pageProperty name="page.side" />
     </div>
-</div>
-<div class="container-fluid footer common">
-    <div class="page-header"><h1> ORIGIN OF LIFE </h1></div>
 </div>
 </body>
 </html>
